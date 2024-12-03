@@ -1,0 +1,216 @@
+[0.000000] (-) TimerEvent: {}
+[0.000911] (camera_calibration_parsers) JobQueued: {'identifier': 'camera_calibration_parsers', 'dependencies': OrderedDict()}
+[0.000996] (camera_info_manager_py) JobQueued: {'identifier': 'camera_info_manager_py', 'dependencies': OrderedDict()}
+[0.001041] (image_transport) JobQueued: {'identifier': 'image_transport', 'dependencies': OrderedDict()}
+[0.001074] (camera_info_manager) JobQueued: {'identifier': 'camera_info_manager', 'dependencies': OrderedDict([('camera_calibration_parsers', '/root/ros-image-stream/install/camera_calibration_parsers')])}
+[0.001099] (image_transport_py) JobQueued: {'identifier': 'image_transport_py', 'dependencies': OrderedDict([('image_transport', '/root/ros-image-stream/install/image_transport')])}
+[0.001124] (ros_image_transport) JobQueued: {'identifier': 'ros_image_transport', 'dependencies': OrderedDict([('image_transport', '/root/ros-image-stream/install/image_transport')])}
+[0.001146] (image_common) JobQueued: {'identifier': 'image_common', 'dependencies': OrderedDict([('camera_calibration_parsers', '/root/ros-image-stream/install/camera_calibration_parsers'), ('image_transport', '/root/ros-image-stream/install/image_transport'), ('camera_info_manager', '/root/ros-image-stream/install/camera_info_manager')])}
+[0.002806] (image_transport) JobStarted: {'identifier': 'image_transport'}
+[0.009568] (camera_calibration_parsers) JobStarted: {'identifier': 'camera_calibration_parsers'}
+[0.013672] (camera_info_manager_py) JobStarted: {'identifier': 'camera_info_manager_py'}
+[0.034688] (image_transport) JobProgress: {'identifier': 'image_transport', 'progress': 'cmake'}
+[0.035035] (image_transport) Command: {'cmd': ['/usr/bin/cmake', '/root/ros-image-stream/ros2_ws/src/image_common/image_transport', '-DCMAKE_INSTALL_PREFIX=/root/ros-image-stream/install/image_transport'], 'cwd': '/root/ros-image-stream/build/image_transport', 'env': OrderedDict([('HOSTNAME', '9b51a9a00955'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros-image-stream/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/ros_image_transport:/opt/ros/humble'), ('PWD', '/root/ros-image-stream/build/image_transport'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/ros2_ws/install/ros_image_transport/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/ros_image_transport:/opt/ros/humble')]), 'shell': False}
+[0.039634] (camera_calibration_parsers) JobProgress: {'identifier': 'camera_calibration_parsers', 'progress': 'cmake'}
+[0.041090] (camera_calibration_parsers) Command: {'cmd': ['/usr/bin/cmake', '/root/ros-image-stream/ros2_ws/src/image_common/camera_calibration_parsers', '-DCMAKE_INSTALL_PREFIX=/root/ros-image-stream/install/camera_calibration_parsers'], 'cwd': '/root/ros-image-stream/build/camera_calibration_parsers', 'env': OrderedDict([('HOSTNAME', '9b51a9a00955'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros-image-stream/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/ros_image_transport:/opt/ros/humble'), ('PWD', '/root/ros-image-stream/build/camera_calibration_parsers'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/ros2_ws/install/ros_image_transport/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/ros_image_transport:/opt/ros/humble')]), 'shell': False}
+[0.100875] (-) TimerEvent: {}
+[0.202122] (-) TimerEvent: {}
+[0.303281] (-) TimerEvent: {}
+[0.403996] (camera_calibration_parsers) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.404393] (-) TimerEvent: {}
+[0.404594] (image_transport) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.507114] (-) TimerEvent: {}
+[0.608384] (-) TimerEvent: {}
+[0.637483] (camera_info_manager_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/camera_info_manager_py', 'build', '--build-base', '/root/ros-image-stream/build/camera_info_manager_py/build', 'install', '--record', '/root/ros-image-stream/build/camera_info_manager_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ros-image-stream/ros2_ws/src/image_common/camera_info_manager_py', 'env': {'HOSTNAME': '9b51a9a00955', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/root/ros-image-stream/ros2_ws', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/root/ros2_ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/root/ros2_ws/install/ros_image_transport:/opt/ros/humble', 'PWD': '/root/ros-image-stream/build/camera_info_manager_py', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/ros-image-stream/build/camera_info_manager_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages:/root/ros2_ws/install/ros_image_transport/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.674755] (image_transport) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.677425] (camera_calibration_parsers) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.696493] (image_transport) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.698559] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.710322] (-) TimerEvent: {}
+[0.811318] (-) TimerEvent: {}
+[0.857803] (camera_info_manager_py) StdoutLine: {'line': b'running egg_info\n'}
+[0.858304] (camera_info_manager_py) StdoutLine: {'line': b'creating ../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info\n'}
+[0.858741] (camera_info_manager_py) StdoutLine: {'line': b'writing ../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info/PKG-INFO\n'}
+[0.859069] (camera_info_manager_py) StdoutLine: {'line': b'writing dependency_links to ../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info/dependency_links.txt\n'}
+[0.859212] (camera_info_manager_py) StdoutLine: {'line': b'writing requirements to ../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info/requires.txt\n'}
+[0.859271] (camera_info_manager_py) StdoutLine: {'line': b'writing top-level names to ../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info/top_level.txt\n'}
+[0.859461] (camera_info_manager_py) StdoutLine: {'line': b"writing manifest file '../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info/SOURCES.txt'\n"}
+[0.860324] (camera_info_manager_py) StdoutLine: {'line': b"reading manifest file '../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info/SOURCES.txt'\n"}
+[0.860508] (camera_info_manager_py) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.861095] (camera_info_manager_py) StdoutLine: {'line': b"writing manifest file '../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info/SOURCES.txt'\n"}
+[0.861254] (camera_info_manager_py) StdoutLine: {'line': b'running build\n'}
+[0.861332] (camera_info_manager_py) StdoutLine: {'line': b'running build_py\n'}
+[0.861463] (camera_info_manager_py) StdoutLine: {'line': b'creating /root/ros-image-stream/build/camera_info_manager_py/build\n'}
+[0.861507] (camera_info_manager_py) StdoutLine: {'line': b'creating /root/ros-image-stream/build/camera_info_manager_py/build/lib\n'}
+[0.861617] (camera_info_manager_py) StdoutLine: {'line': b'creating /root/ros-image-stream/build/camera_info_manager_py/build/lib/camera_info_manager\n'}
+[0.861656] (camera_info_manager_py) StdoutLine: {'line': b'copying camera_info_manager/__init__.py -> /root/ros-image-stream/build/camera_info_manager_py/build/lib/camera_info_manager\n'}
+[0.861702] (camera_info_manager_py) StdoutLine: {'line': b'copying camera_info_manager/camera_info_manager.py -> /root/ros-image-stream/build/camera_info_manager_py/build/lib/camera_info_manager\n'}
+[0.861807] (camera_info_manager_py) StdoutLine: {'line': b'copying camera_info_manager/zoom_camera_info_manager.py -> /root/ros-image-stream/build/camera_info_manager_py/build/lib/camera_info_manager\n'}
+[0.861906] (camera_info_manager_py) StdoutLine: {'line': b'running install\n'}
+[0.862116] (camera_info_manager_py) StdoutLine: {'line': b'running install_lib\n'}
+[0.862515] (camera_info_manager_py) StdoutLine: {'line': b'creating /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager\n'}
+[0.862616] (camera_info_manager_py) StdoutLine: {'line': b'copying /root/ros-image-stream/build/camera_info_manager_py/build/lib/camera_info_manager/__init__.py -> /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager\n'}
+[0.862723] (camera_info_manager_py) StdoutLine: {'line': b'copying /root/ros-image-stream/build/camera_info_manager_py/build/lib/camera_info_manager/camera_info_manager.py -> /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager\n'}
+[0.862845] (camera_info_manager_py) StdoutLine: {'line': b'copying /root/ros-image-stream/build/camera_info_manager_py/build/lib/camera_info_manager/zoom_camera_info_manager.py -> /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager\n'}
+[0.863154] (camera_info_manager_py) StdoutLine: {'line': b'byte-compiling /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager/__init__.py to __init__.cpython-310.pyc\n'}
+[0.864166] (camera_info_manager_py) StdoutLine: {'line': b'byte-compiling /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager/camera_info_manager.py to camera_info_manager.cpython-310.pyc\n'}
+[0.870556] (camera_info_manager_py) StdoutLine: {'line': b'byte-compiling /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager/zoom_camera_info_manager.py to zoom_camera_info_manager.cpython-310.pyc\n'}
+[0.872484] (camera_info_manager_py) StdoutLine: {'line': b'running install_data\n'}
+[0.872980] (camera_info_manager_py) StdoutLine: {'line': b'creating /root/ros-image-stream/install/camera_info_manager_py/share/ament_index\n'}
+[0.873235] (camera_info_manager_py) StdoutLine: {'line': b'creating /root/ros-image-stream/install/camera_info_manager_py/share/ament_index/resource_index\n'}
+[0.873521] (camera_info_manager_py) StdoutLine: {'line': b'creating /root/ros-image-stream/install/camera_info_manager_py/share/ament_index/resource_index/packages\n'}
+[0.873601] (camera_info_manager_py) StdoutLine: {'line': b'copying resource/camera_info_manager_py -> /root/ros-image-stream/install/camera_info_manager_py/share/ament_index/resource_index/packages\n'}
+[0.873643] (camera_info_manager_py) StdoutLine: {'line': b'copying package.xml -> /root/ros-image-stream/install/camera_info_manager_py/share/camera_info_manager_py\n'}
+[0.873679] (camera_info_manager_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.874518] (camera_info_manager_py) StdoutLine: {'line': b'Copying ../../../../build/camera_info_manager_py/camera_info_manager_py.egg-info to /root/ros-image-stream/install/camera_info_manager_py/lib/python3.10/site-packages/camera_info_manager_py-6.0.3-py3.10.egg-info\n'}
+[0.875306] (camera_info_manager_py) StdoutLine: {'line': b'running install_scripts\n'}
+[0.899068] (camera_info_manager_py) StdoutLine: {'line': b"writing list of installed files to '/root/ros-image-stream/build/camera_info_manager_py/install.log'\n"}
+[0.914129] (-) TimerEvent: {}
+[0.915605] (camera_info_manager_py) CommandEnded: {'returncode': 0}
+[0.923420] (camera_info_manager_py) JobEnded: {'identifier': 'camera_info_manager_py', 'rc': 0}
+[1.015290] (-) TimerEvent: {}
+[1.116136] (-) TimerEvent: {}
+[1.124835] (image_transport) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.127503] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.137884] (image_transport) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.138125] (image_transport) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.138421] (image_transport) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.140543] (image_transport) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.140675] (camera_calibration_parsers) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.140791] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.141060] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.143165] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.217118] (-) TimerEvent: {}
+[1.323105] (-) TimerEvent: {}
+[1.424119] (-) TimerEvent: {}
+[1.525117] (-) TimerEvent: {}
+[1.527063] (image_transport) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.527961] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.539740] (image_transport) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.539971] (image_transport) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.540345] (image_transport) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.540590] (camera_calibration_parsers) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.540836] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.541193] (camera_calibration_parsers) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.545263] (image_transport) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.546010] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.626613] (-) TimerEvent: {}
+[1.727118] (-) TimerEvent: {}
+[1.828355] (-) TimerEvent: {}
+[1.929601] (-) TimerEvent: {}
+[2.030605] (-) TimerEvent: {}
+[2.056325] (image_transport) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.057898] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.131871] (-) TimerEvent: {}
+[2.190309] (image_transport) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[2.192225] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.216413] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.216592] (image_transport) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.218778] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.218928] (image_transport) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.223387] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.223533] (image_transport) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.230713] (camera_calibration_parsers) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.230829] (image_transport) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.232267] (-) TimerEvent: {}
+[2.240455] (camera_calibration_parsers) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.240596] (image_transport) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.268755] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.268911] (image_transport) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.270187] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.270270] (image_transport) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.333349] (-) TimerEvent: {}
+[2.434171] (-) TimerEvent: {}
+[2.535157] (-) TimerEvent: {}
+[2.594989] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.595242] (image_transport) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.619868] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.620037] (image_transport) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.636316] (-) TimerEvent: {}
+[2.663096] (image_transport) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.663768] (camera_calibration_parsers) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.667832] (image_transport) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.668319] (camera_calibration_parsers) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.737203] (-) TimerEvent: {}
+[2.838115] (-) TimerEvent: {}
+[2.939118] (-) TimerEvent: {}
+[3.040340] (-) TimerEvent: {}
+[3.051590] (image_transport) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.051830] (image_transport) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.051960] (camera_calibration_parsers) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.052179] (camera_calibration_parsers) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.141131] (-) TimerEvent: {}
+[3.247113] (-) TimerEvent: {}
+[3.348606] (-) TimerEvent: {}
+[3.445513] (image_transport) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.446336] (image_transport) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.447698] (camera_calibration_parsers) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.448603] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.448659] (-) TimerEvent: {}
+[3.485953] (image_transport) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[3.487100] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.498243] (image_transport) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[3.511680] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)\n'}
+[3.512197] (image_transport) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.514458] (camera_calibration_parsers) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:37 (target_link_libraries):\n'}
+[3.514568] (camera_calibration_parsers) StderrLine: {'line': b'  The keyword signature for target_link_libraries has already been used with\n'}
+[3.514622] (camera_calibration_parsers) StderrLine: {'line': b'  the target "camera_calibration_parsers".  All uses of target_link_libraries\n'}
+[3.514669] (camera_calibration_parsers) StderrLine: {'line': b'  with a target must be either all-keyword or all-plain.\n'}
+[3.514712] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.514774] (camera_calibration_parsers) StderrLine: {'line': b'  The uses of the keyword signature are here:\n'}
+[3.514818] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.514860] (camera_calibration_parsers) StderrLine: {'line': b'   * CMakeLists.txt:31 (target_link_libraries)\n'}
+[3.514899] (camera_calibration_parsers) StderrLine: {'line': b'   * CMakeLists.txt:33 (target_link_libraries)\n'}
+[3.514994] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.515057] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.515114] (camera_calibration_parsers) StderrLine: {'line': b'\x1b[0m\n'}
+[3.515209] (camera_calibration_parsers) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:46 (target_link_libraries):\n'}
+[3.515254] (camera_calibration_parsers) StderrLine: {'line': b'  The plain signature for target_link_libraries has already been used with\n'}
+[3.515290] (camera_calibration_parsers) StderrLine: {'line': b'  the target "camera_calibration_parsers".  All uses of target_link_libraries\n'}
+[3.515322] (camera_calibration_parsers) StderrLine: {'line': b'  with a target must be either all-keyword or all-plain.\n'}
+[3.515355] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.515387] (camera_calibration_parsers) StderrLine: {'line': b'  The uses of the plain signature are here:\n'}
+[3.515419] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.515450] (camera_calibration_parsers) StderrLine: {'line': b'   * CMakeLists.txt:37 (target_link_libraries)\n'}
+[3.515481] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.515513] (camera_calibration_parsers) StderrLine: {'line': b'\n'}
+[3.515544] (camera_calibration_parsers) StderrLine: {'line': b'\x1b[0m\n'}
+[3.518068] (camera_calibration_parsers) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.541710] (image_transport) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.549483] (-) TimerEvent: {}
+[3.650846] (-) TimerEvent: {}
+[3.653855] (camera_calibration_parsers) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.663238] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.664358] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.664765] (camera_calibration_parsers) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/ros-image-stream/ros2_ws/src/image_common/camera_calibration_parsers/include>\n'}
+[3.664856] (camera_calibration_parsers) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.665544] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.665602] (camera_calibration_parsers) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.665882] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.666232] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.666530] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.667238] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.667326] (camera_calibration_parsers) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.667564] (camera_calibration_parsers) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.669266] (camera_calibration_parsers) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.669330] (camera_calibration_parsers) StdoutLine: {'line': b'See also "/root/ros-image-stream/build/camera_calibration_parsers/CMakeFiles/CMakeOutput.log".\n'}
+[3.676151] (image_transport) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.677918] (camera_calibration_parsers) CommandEnded: {'returncode': 1}
+[3.690755] (image_transport) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.691775] (image_transport) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.691828] (image_transport) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.692318] (image_transport) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.693300] (image_transport) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.693363] (image_transport) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.693601] (image_transport) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.695306] (image_transport) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.742483] (camera_calibration_parsers) JobEnded: {'identifier': 'camera_calibration_parsers', 'rc': 1}
+[3.750209] (image_transport) StdoutLine: {'line': b'-- Generating done\n'}
+[3.751229] (-) TimerEvent: {}
+[3.753284] (image_transport) StdoutLine: {'line': b'-- Build files have been written to: /root/ros-image-stream/build/image_transport\n'}
+[3.762720] (image_transport) JobEnded: {'identifier': 'image_transport', 'rc': 'SIGINT'}
+[3.763654] (camera_info_manager) JobSkipped: {'identifier': 'camera_info_manager'}
+[3.763689] (image_transport_py) JobSkipped: {'identifier': 'image_transport_py'}
+[3.763715] (ros_image_transport) JobSkipped: {'identifier': 'ros_image_transport'}
+[3.763735] (image_common) JobSkipped: {'identifier': 'image_common'}
+[3.763749] (-) EventReactorShutdown: {}

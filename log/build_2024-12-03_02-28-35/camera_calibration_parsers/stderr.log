@@ -1,0 +1,23 @@
+[31mCMake Error at CMakeLists.txt:37 (target_link_libraries):
+  The keyword signature for target_link_libraries has already been used with
+  the target "camera_calibration_parsers".  All uses of target_link_libraries
+  with a target must be either all-keyword or all-plain.
+
+  The uses of the keyword signature are here:
+
+   * CMakeLists.txt:31 (target_link_libraries)
+   * CMakeLists.txt:33 (target_link_libraries)
+
+
+[0m
+[31mCMake Error at CMakeLists.txt:46 (target_link_libraries):
+  The plain signature for target_link_libraries has already been used with
+  the target "camera_calibration_parsers".  All uses of target_link_libraries
+  with a target must be either all-keyword or all-plain.
+
+  The uses of the plain signature are here:
+
+   * CMakeLists.txt:37 (target_link_libraries)
+
+
+[0m
