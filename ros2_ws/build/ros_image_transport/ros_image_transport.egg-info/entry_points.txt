@@ -1,0 +1,3 @@
+[console_scripts]
+image_transport_node = ros_image_transport.mynode:main
+
